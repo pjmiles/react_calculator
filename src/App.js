@@ -6,15 +6,22 @@ function App() {
 
 const [result, setResult] = useState("")
 
+// to account for each input or button pressed
 const handleClick = (e) => {
     setResult(result.concat(e.target.name));
 }
+
+// to clear the entire screen
 const clear = () => {
     setResult("");
 }
+
+// backspace function to take back a single input
+
 const backSpace = () => {
     setResult(result.slice(0, result.length - 1))
 }
+// calculation function 
 const calculate = () => {
     try {
     setResult(eval(result).toString());
@@ -23,8 +30,7 @@ const calculate = () => {
     }
 }
 
-  return (
-    
+  return ( 
     <div className='container'>
         <form>
             <input type="text" value={result} />
