@@ -1,0 +1,10 @@
+a {
+    font-size: 17px;
+    text-decoration: none;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+a:hover {
+    color: rgb(132, 168, 168);
+    cursor: pointer;
+}
